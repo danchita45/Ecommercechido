@@ -32,7 +32,7 @@ Editor::inst( $db, 'productos' )
 			->validator( Validate::numeric() )
 			->setFormatter( Format::ifEmpty(null) )
 	)
-    ->join(
+    /*->join(
         Mjoin::inst( 'files' )
             ->link( 'productos.id', 'productos_files.producto_id' )
             ->link( 'files.id', 'productos_files.file_id' )
@@ -49,6 +49,6 @@ Editor::inst( $db, 'productos' )
                         ->validator( Validate::fileExtensions( array( 'webp','png', 'jpg', 'jpeg', 'gif' ), "Please upload an image" ) )
                     )
             )
-    )
+    )*/
 	->process( $_POST )
 	->json();
