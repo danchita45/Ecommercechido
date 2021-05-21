@@ -8,7 +8,7 @@ if(isset($_REQUEST['idBorrar'])){
     if($res){
         ?>
         <div class="alert alert-warning float-right" role="alert">
-            Usuario borrado con exito (no tienes corazon)
+            Usuario borrado con exito
         </div>
         <?php
     }else{
@@ -27,7 +27,7 @@ if(isset($_REQUEST['idBorrar'])){
           <div class="container-fluid">
               <div class="row mb-2">
                   <div class="col-sm-6">
-                      <h1>Usuarios</h1>
+                      <h1>Administradores</h1>
                   </div>
               </div>
           </div><!-- /.container-fluid -->
@@ -38,6 +38,9 @@ if(isset($_REQUEST['idBorrar'])){
           <div class="row">
               <div class="col-12">
                   <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Tabla de visualizacion de los Administradores registrados </h3>
+                    </div>
                       <!-- /.card-header -->
                       <div class="card-body">
                           <table id="example2" class="table table-bordered table-hover">

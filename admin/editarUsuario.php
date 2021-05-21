@@ -18,7 +18,7 @@ if (isset($_REQUEST['guardar'])) {
     } else {
 ?>
         <div class="alert alert-danger" role="alert">
-            Error al crear usuario <?php echo mysqli_error($con); ?>
+            Error al editar usuario <?php echo mysqli_error($con); ?>
         </div>
 <?php
     }
@@ -35,7 +35,7 @@ $row=mysqli_fetch_assoc($res);
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Crear usuario</h1>
+                    <h1>Editar usuario</h1>
                 </div>
             </div>
         </div><!-- /.container-fluid -->

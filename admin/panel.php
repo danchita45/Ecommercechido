@@ -16,7 +16,7 @@ $modulo=$_REQUEST['modulo']??'';
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My ecommerce by pn</title>
+  <title>Floreria Zantedeschia</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -83,14 +83,17 @@ $modulo=$_REQUEST['modulo']??'';
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="#" class="brand-link">
-        <img src="dist/img/pn icono.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">My ecommerce</span>
+        <img src="dist/img/r1.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Floreria Zantedeschia</span>
       </a>
 
       <!-- Sidebar -->
       <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/usuario.png" class="img-circle elevation-2" alt="User Image">
+          </div>
           <div class="info">
             <a href="#" class="d-block"><?php echo $_SESSION['nombre']; ?></a>
           </div>
@@ -283,7 +286,7 @@ $modulo=$_REQUEST['modulo']??'';
   $(document).ready(function () {
     $(".borrar").click(function (e) { 
       e.preventDefault();
-      var res=confirm("Realmente te quieres cargar (borrar) ese usuario?");
+      var res=confirm("Seguro que deseas borrar este usuario?");
       if(res==true){
         var link=$(this).attr("href");
         window.location=link;

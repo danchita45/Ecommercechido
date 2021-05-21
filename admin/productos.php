@@ -20,6 +20,9 @@ $con = mysqli_connect($host, $user, $pass, $db);
           <div class="row">
               <div class="col-12">
                   <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Tabla de visualizacion de los productos </h3>
+                    </div>
                       <!-- /.card-header -->
                       <div class="card-body">
                           <table id="tablaProductos" class="table table-bordered table-hover">
